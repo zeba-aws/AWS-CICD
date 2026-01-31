@@ -3,10 +3,10 @@ os: linux
 
 hooks:
   ApplicationStop:
-    - location: flask-app/Scripts/stop_container.sh
+    - location: Scripts/stop_container.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: flask-app/Scripts/start_container.sh
+    - location: Scripts/start_container.sh
       timeout: 300
       runas: root
